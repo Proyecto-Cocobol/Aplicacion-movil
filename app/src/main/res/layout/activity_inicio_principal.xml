@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registro"
+    tools:context=".Inicio_principal"
     android:background="#EDF2F7">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
