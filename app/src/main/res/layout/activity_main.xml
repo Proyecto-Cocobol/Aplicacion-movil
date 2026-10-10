@@ -1,60 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/degradado_inicio_sesion">
+    android:background="@drawable/degradado_inicio_sesion"
+    android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
+    <!--Logo de la Academia-->
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Contraseña"
-        android:inputType="textPassword"
-        android:textColorHint="#2D3748"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="389dp" />
+        app:srcCompat="@drawable/logo_lobo"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="52dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="35dp"/>
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        app:srcCompat="@drawable/correo_inactivo"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="278dp" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        app:srcCompat="@drawable/contrasena_inactiva"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="374dp" />
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="wrap_content"
+    <!--Aqui está lo del correro; el logo y el edit text-->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:textColorHint="#2D3748"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="286dp" />
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
 
-    <Button
-        android:id="@+id/boton_registro"
-        android:layout_width="300dp"
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/correo_inactivo"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="278dp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#2D3748"
+            tools:layout_editor_absoluteX="133dp"
+            tools:layout_editor_absoluteY="286dp" />
+
+    </LinearLayout>
+
+
+    <!--Aqui está lo de la contraseña; el logo y el edit text-->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/boton_registro"
-        android:text="Registrarse"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="575dp" />
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
 
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/contrasena_inactiva"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="374dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColorHint="#2D3748"
+            tools:layout_editor_absoluteX="133dp"
+            tools:layout_editor_absoluteY="389dp" />
+
+    </LinearLayout>
+
+    <!--Boton de inicio de sesión-->
     <Button
         android:id="@+id/boton_inicio_sesion"
         android:layout_width="300dp"
@@ -63,14 +90,26 @@
         android:text="Iniciar Sesion"
         android:textColor="#E91E63"
         tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="497dp" />
+        tools:layout_editor_absoluteY="497dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center_horizontal"/>
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
+    <!--Boton de inicio de sesión-->
+    <Button
+        android:id="@+id/boton_registro"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logo_lobo"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="52dp" />
+        android:background="@drawable/boton_registro"
+        android:text="Registrarse"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="575dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center_horizontal"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</LinearLayout>
