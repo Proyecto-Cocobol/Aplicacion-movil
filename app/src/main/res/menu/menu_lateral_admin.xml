@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <!--Aqui damos atributos a cada uno de las secciones del menu lateral-->
+
+        <item
+            android:id="@+id/menu_lateral_inicio"
+            android:title="Inicio"
+            android:icon="@drawable/inicio_activo"
+            />
+
+        <item
+            android:id="@+id/menu_lateral_alumnos"
+            android:title="Alumnos"
+            android:icon="@drawable/alumnos_menu_lateral"/>
+
+        <item
+            android:id="@+id/menu_lateral_personal"
+            android:title="Personal"
+            android:icon="@drawable/personal_menu_lateral"/>
+
+        <item
+            android:id="@+id/menu_lateral_finanzas"
+            android:title="Finanzas"
+            android:icon="@drawable/finanzas_menu_lateral"/>
+
+        <item
+            android:id="@+id/menu_lateral_equipos"
+            android:title="Equipos"
+            android:icon="@drawable/equipo_menu_lateral"/>
+
+        <item
+            android:id="@+id/menu_lateral_calendario"
+            android:title="Calendario"
+            android:icon="@drawable/calendario_menu_lateral"/>
+
+        <item
+            android:id="@+id/menu_lateral_documentos"
+            android:title="Documentos"
+            android:icon="@drawable/documentos_menu_lateral"/>
+
+        <item
+            android:id="@+id/menu_lateral_uniformes"
+            android:title="Uniformes"
+            android:icon="@drawable/uniforme_menu_lateral"/>
+</menu>

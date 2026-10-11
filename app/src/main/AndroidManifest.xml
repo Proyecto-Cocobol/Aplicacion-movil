@@ -26,7 +26,7 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".Inicio_principal"
+            android:name=".Inicio_principal_admin"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
