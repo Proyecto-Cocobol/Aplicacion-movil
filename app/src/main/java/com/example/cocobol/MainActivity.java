@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        //Aquí están los ID y los Listeners de los botones
 
+        //Aquí están los ID y los Listeners de los botones
         BtnIniciarSesion = findViewById(R.id.boton_inicio_sesion);
         BtnIniciarSesion.setOnClickListener(this);
 
@@ -54,6 +54,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if(obtenerDatos.getContrasena().equals("admin") && obtenerDatos.getCorreo().equals("admin")) {
                 Intent intento = new Intent(this, Inicio_principal_admin.class);
                 startActivity(intento);
+            }else if(obtenerDatos.getContrasena().equals("alumno") && obtenerDatos.getCorreo().equals("alumno")){
+                Intent intentito = new Intent(this, Home.class);
+                startActivity(intentito);
             }else{
                 Toast.makeText(this, "Credenciales inválidas", Toast.LENGTH_LONG).show();
             }
