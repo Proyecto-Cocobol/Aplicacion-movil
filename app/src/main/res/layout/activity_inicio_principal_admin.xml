@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Este Drawer Layout es el cabron que hace posible el menu lateral -->
+<!-- Este Drawer Layout es el que hace posible el menu lateral -->
 <androidx.drawerlayout.widget.DrawerLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,63 +8,69 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Inicio_principal_admin"
-    tools:openDrawer="start"><!--Para quitar el menu lateral, solo hay que quitar esta linea-->
+    tools:openDrawer="start">
 
-    <!--Este es el container de la pantalla principal-->
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <!-- Container de la pantalla principal -->
+    <LinearLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#EDF2F7">
+        android:background="#EDF2F7"
+        android:orientation="vertical">
 
-        <!-- Aqui esta el menu superior con el menu deplegable y el logo-->
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <!-- Barra superior corregida -->
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:background="#2D3748"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="-2dp">
+            android:padding="8dp">
 
+            <!-- Botón de menú pegado a la izquierda -->
             <ImageButton
                 android:id="@+id/imageButton4"
-                android:layout_width="37dp"
-                android:layout_height="36dp"
-                android:layout_margin="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/boton_menu"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="22dp" />
+                app:srcCompat="@drawable/boton_menu" />
 
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="203dp"
-                android:layout_height="51dp"
-                app:srcCompat="@drawable/nombre_academia_lobos"
-                tools:layout_editor_absoluteX="131dp"
-                tools:layout_editor_absoluteY="15dp" />
+            <!-- Contenedor central para el texto/logo de la academia -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="77dp"
-                android:layout_height="68dp"
-                app:srcCompat="@drawable/logo_lobo"
-                tools:layout_editor_absoluteX="92dp"
-                tools:layout_editor_absoluteY="7dp" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/logo_lobo" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    app:srcCompat="@drawable/nombre_academia_lobos" />
+            </LinearLayout>
 
-    <!--Aqui le damos formato al menu lateral-->
+        </RelativeLayout>
+
+        <!-- Aquí puedes agregar el resto del contenido de tu pantalla principal -->
+
+    </LinearLayout>
+
+    <!-- Menú lateral (Navigation View) -->
     <com.google.android.material.navigation.NavigationView
-        android:layout_width="200dp"
-        android:layout_height="match_parent"
         android:id="@+id/nav_menu_admin"
-        android:background="#242C3A"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:menu="@menu/menu_lateral_admin"
-        app:itemTextColor="#EDF2F7"/>
-
+        android:background="#242C3A"
+        app:itemTextColor="#EDF2F7"
+        app:menu="@menu/menu_lateral_admin" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

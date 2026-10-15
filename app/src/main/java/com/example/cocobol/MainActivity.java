@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //Aqui se hace la validacion de login
         if(v.getId() == R.id.boton_inicio_sesion) {
-            if(obtenerDatos.getContrasena().equals("admin") && obtenerDatos.getCorreo().equals("admin@gmail.com")) {
-                Intent intento = new Intent(this, Home.class);
+            if(obtenerDatos.getContrasena().equals("admin") && obtenerDatos.getCorreo().equals("admin")) {
+                Intent intento = new Intent(this, Inicio_principal_admin.class);
                 startActivity(intento);
             }else{
                 Toast.makeText(this, "Credenciales inválidas", Toast.LENGTH_LONG).show();
