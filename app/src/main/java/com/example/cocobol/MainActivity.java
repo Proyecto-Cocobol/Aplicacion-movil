@@ -44,14 +44,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        clasesita objetito = new clasesita();
+        Datos obtenerDatos = new Datos();
 
-        objetito.setContrasena(Contrasena.getText().toString());
-        objetito.setCorreo(Correo.getText().toString());
+        obtenerDatos.setContrasena(Contrasena.getText().toString());
+        obtenerDatos.setCorreo(Correo.getText().toString());
 
         //Aqui se hace la validacion de login
         if(v.getId() == R.id.boton_inicio_sesion) {
-            if(objetito.getContrasena().equals("admin") && objetito.getCorreo().equals("admin@gmail.com")) {
+            if(obtenerDatos.getContrasena().equals("admin") && obtenerDatos.getCorreo().equals("admin@gmail.com")) {
                 Intent intento = new Intent(this, Home.class);
                 startActivity(intento);
             }else{
