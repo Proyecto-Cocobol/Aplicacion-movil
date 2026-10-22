@@ -95,18 +95,6 @@
         android:layout_marginBottom="30dp"
         android:layout_gravity="center_horizontal"/>
 
-    <!--Boton de inicio de sesión-->
-    <Button
-        android:id="@+id/boton_registro"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/boton_registro"
-        android:text="REGISTRARSE"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="575dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="30dp"
-        android:layout_gravity="center_horizontal"/>
 
 
 
