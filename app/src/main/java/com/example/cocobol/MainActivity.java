@@ -18,7 +18,7 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     EditText Contrasena, Correo;
-    Button BtnIniciarSesion, BtnRegistrarse;
+    Button BtnIniciarSesion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +35,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         BtnIniciarSesion = findViewById(R.id.boton_inicio_sesion);
         BtnIniciarSesion.setOnClickListener(this);
 
-        BtnRegistrarse = findViewById(R.id.boton_registro);
-        BtnRegistrarse.setOnClickListener(this);
 
         Contrasena = findViewById(R.id.Contrasena);
         Correo = findViewById(R.id.Correo);
@@ -60,11 +58,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }else{
                 Toast.makeText(this, "Credenciales inválidas", Toast.LENGTH_LONG).show();
             }
-        }
-        //Aqui se hace la validacion de ir al registro
-        else if(v.getId() == R.id.boton_registro) {
-            Intent intento2 = new Intent(this, Registro.class);
-            startActivity(intento2);
         }
     }
 }
