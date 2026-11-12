@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Paleta tomada de admin.css de la página web -->
+    <color name="negro">#111111</color>
+    <color name="negro_2">#181818</color>
+    <color name="gris_header">#303030</color>
+    <color name="gris">#777777</color>
+    <color name="gris_claro">#E8E8E8</color>
+    <color name="gris_fondo">#F5F5F5</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="linea">#F0F0F0</color>
+    <color name="magenta">#D50083</color>
+    <color name="magenta_hover">#B90070</color>
+    <color name="magenta_claro">#F5D4E8</color>
+    <color name="rojo">#D94B4B</color>
+    <color name="amarillo">#E1AD25</color>
+    <color name="azul">#3979D8</color>
+
+    <!-- Estados -->
+    <color name="estado_ok_fondo">#F5D4E8</color>
+    <color name="estado_ok_texto">#8B0055</color>
+    <color name="estado_aviso_fondo">#FFF1C9</color>
+    <color name="estado_aviso_texto">#896600</color>
+    <color name="estado_peligro_fondo">#F9DADA</color>
+    <color name="estado_peligro_texto">#9B3030</color>
+    <color name="estado_neutro_fondo">#EEEEEE</color>
+    <color name="estado_neutro_texto">#555555</color>
+
+    <!-- Login -->
+    <color name="login_fondo">#F2F2F2</color>
+    <color name="login_boton">#222222</color>
+    <color name="login_error">#B42318</color>
+</resources>

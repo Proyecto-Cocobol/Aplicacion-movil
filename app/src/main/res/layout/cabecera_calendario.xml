@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calendario"
+            android:textSize="26sp"
+            android:textColor="@color/negro"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agenda y actividades de la Academia."
+            android:textSize="13sp"
+            android:textColor="@color/gris"
+            android:layout_marginTop="4dp" />
+        <View
+            android:layout_width="50dp"
+            android:layout_height="4dp"
+            android:background="@color/magenta"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="6dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vista"
+                    android:textSize="11sp"
+                    android:textColor="@color/gris"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp" />
+                <Spinner
+                    android:id="@+id/fil_vista"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:entries="@array/f_cal_vista"
+                    android:background="@drawable/fondo_input" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bitácora"
+                    android:textSize="11sp"
+                    android:textColor="@color/gris"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp" />
+                <Spinner
+                    android:id="@+id/fil_bitacora"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:entries="@array/f_cal_bitacora"
+                    android:background="@drawable/fondo_input" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Solo entreno"
+                    android:textSize="11sp"
+                    android:textColor="@color/gris"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp" />
+                <Spinner
+                    android:id="@+id/fil_entreno"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:entries="@array/f_cal_entreno"
+                    android:background="@drawable/fondo_input" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/fondo_card"
+        android:padding="16dp"
+        android:layout_marginBottom="14dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp">
+            <Button
+                android:id="@+id/boton_mes_anterior"
+                android:text="‹"
+                android:textSize="13sp"
+                android:textColor="@color/magenta"
+                android:textStyle="bold"
+                android:background="@drawable/fondo_boton_borde"
+                android:textAllCaps="false"
+                android:minHeight="0dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:minWidth="0dp" />
+            <TextView
+                android:id="@+id/txt_mes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="@color/negro"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center" />
+            <Button
+                android:id="@+id/boton_mes_siguiente"
+                android:text="›"
+                android:textSize="13sp"
+                android:textColor="@color/magenta"
+                android:textStyle="bold"
+                android:background="@drawable/fondo_boton_borde"
+                android:textAllCaps="false"
+                android:minHeight="0dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:minWidth="0dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/contenedor_mes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toca un día para agregar un evento en esa fecha."
+            android:textSize="11sp"
+            android:textColor="@color/gris"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="14dp">
+        <Button
+            android:id="@+id/boton_agregar"
+            android:text="+ Evento"
+            android:textSize="13sp"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:background="@drawable/fondo_boton_magenta"
+            android:textAllCaps="false"
+            android:minHeight="0dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:minWidth="0dp" />
+        <Button
+            android:id="@+id/boton_ver_bitacora"
+            android:text="Ver bitácora"
+            android:textSize="13sp"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:background="@drawable/fondo_boton_negro"
+            android:textAllCaps="false"
+            android:minHeight="0dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:minWidth="0dp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txt_titulo_lista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eventos"
+        android:textSize="16sp"
+        android:textColor="@color/negro"
+        android:textStyle="bold" />
+</LinearLayout>

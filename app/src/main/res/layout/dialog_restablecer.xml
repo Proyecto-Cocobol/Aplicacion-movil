@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restablecer contraseña"
+        android:textSize="20sp"
+        android:textColor="@color/negro"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/dlg_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="La contraseña anterior no se puede consultar. Define una nueva contraseña para esta cuenta."
+        android:textSize="13sp"
+        android:textColor="@color/gris"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="14dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nueva contraseña"
+            android:textSize="13sp"
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
+        <EditText
+            android:id="@+id/dlg_nueva"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="Mínimo 10 caracteres"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/fondo_input"
+            android:textColor="@color/negro"
+            android:textColorHint="@color/gris"
+            android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmar contraseña"
+            android:textSize="13sp"
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
+        <EditText
+            android:id="@+id/dlg_confirmar"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint=""
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/fondo_input"
+            android:textColor="@color/negro"
+            android:textColorHint="@color/gris"
+            android:singleLine="true" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/dlg_mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="13sp"
+        android:textColor="@color/login_error" />
+</LinearLayout>

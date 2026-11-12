@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:background="@color/gris_fondo">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/barra_superior"
+        android:background="@color/magenta"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:minHeight="64dp">
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="48dp"
+            android:src="@drawable/logo_lobos_web"
+            android:scaleType="fitCenter" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Academia Lobos"
+            android:textSize="17sp"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/fondo_card"
+            android:padding="16dp"
+            android:layout_marginBottom="14dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_bienvenida"
+                android:text="Bienvenido"
+                android:textSize="24sp"
+                android:textColor="@color/negro"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="50dp"
+                android:layout_height="4dp"
+                android:background="@color/magenta"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_rol"
+                android:text="Esta sección estará disponible próximamente."
+                android:textSize="14sp"
+                android:textColor="@color/gris"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="18dp" />
+            <Button
+                android:id="@+id/boton_cerrar_sesion"
+                android:text="Cerrar sesión"
+                android:textSize="13sp"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:background="@drawable/fondo_boton_negro"
+                android:textAllCaps="false"
+                android:minHeight="0dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:minWidth="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout">
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gris_fondo">
+        <include
+            layout="@layout/barra_superior" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+                    <TextView
+                        android:id="@+id/txt_bienvenida"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bienvenido de nuevo administrador"
+                        android:textSize="26sp"
+                        android:textColor="@color/negro"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/txt_fecha_hoy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="13sp"
+                        android:textColor="@color/gris"
+                        android:layout_marginTop="4dp" />
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="4dp"
+                        android:background="@color/magenta"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="14dp">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/fondo_card"
+                        android:padding="14dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alumnos"
+                            android:textSize="12sp"
+                            android:textColor="@color/gris"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/txt_num_alumnos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="24sp"
+                            android:textColor="@color/negro"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/fondo_card"
+                        android:padding="14dp"
+                        android:layout_marginStart="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Por cobrar"
+                            android:textSize="12sp"
+                            android:textColor="@color/gris"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/txt_por_cobrar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="24sp"
+                            android:textColor="@color/magenta"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/fondo_card"
+                    android:padding="16dp"
+                    android:layout_marginBottom="14dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="6dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Próximas actividades"
+                            android:textSize="16sp"
+                            android:textColor="@color/negro"
+                            android:textStyle="bold"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:id="@+id/txt_mes_actual"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="12sp"
+                            android:textColor="@color/magenta"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/contenedor_eventos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+                    <Button
+                        android:id="@+id/boton_ver_calendario"
+                        android:text="Ver calendario"
+                        android:textSize="13sp"
+                        android:textColor="@color/magenta"
+                        android:textStyle="bold"
+                        android:background="@drawable/fondo_boton_borde"
+                        android:textAllCaps="false"
+                        android:minHeight="0dp"
+                        android:paddingEnd="16dp"
+                        android:paddingStart="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:minWidth="0dp"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/fondo_card"
+                    android:padding="16dp"
+                    android:layout_marginBottom="14dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="6dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Actividad reciente"
+                            android:textSize="16sp"
+                            android:textColor="@color/negro"
+                            android:textStyle="bold"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bitácora"
+                            android:textSize="12sp"
+                            android:textColor="@color/magenta"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/contenedor_bitacora"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+                    <Button
+                        android:id="@+id/boton_ver_bitacora"
+                        android:text="Ver bitácora"
+                        android:textSize="13sp"
+                        android:textColor="@color/magenta"
+                        android:textStyle="bold"
+                        android:background="@drawable/fondo_boton_borde"
+                        android:textAllCaps="false"
+                        android:minHeight="0dp"
+                        android:paddingEnd="16dp"
+                        android:paddingStart="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:minWidth="0dp"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/fondo_header_alumno"
+                    android:padding="18dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Academia Lobos"
+                        android:textSize="18sp"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Información general de la Academia Lobos."
+                        android:textSize="13sp"
+                        android:textColor="@color/gris_claro"
+                        android:layout_marginTop="4dp" />
+                    <Button
+                        android:id="@+id/boton_contacto"
+                        android:text="Contáctanos"
+                        android:textSize="13sp"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"
+                        android:background="@drawable/fondo_boton_magenta"
+                        android:textAllCaps="false"
+                        android:minHeight="0dp"
+                        android:paddingEnd="16dp"
+                        android:paddingStart="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:minWidth="0dp"
+                        android:layout_marginTop="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <include
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        layout="@layout/menu_lateral" />
+</androidx.drawerlayout.widget.DrawerLayout>

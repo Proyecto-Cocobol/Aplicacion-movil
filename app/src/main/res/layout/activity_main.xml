@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:background="@color/login_fondo">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/fondo_login_card"
+                android:padding="26dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="28dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Academia Lobos"
+                        android:textSize="28sp"
+                        android:textColor="@color/negro"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sistema de administración"
+                        android:textSize="14sp"
+                        android:textColor="@color/gris"
+                        android:gravity="center"
+                        android:layout_marginTop="6dp" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Iniciar sesión"
+                    android:textSize="22sp"
+                    android:textColor="@color/negro"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingresa tus datos para continuar."
+                    android:textSize="14sp"
+                    android:textColor="@color/gris"
+                    android:layout_marginBottom="22dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Usuario o número de boleta"
+                    android:textSize="14sp"
+                    android:textColor="@color/negro"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+                <EditText
+                    android:id="@+id/Correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Usuario o boleta"
+                    android:textSize="15sp"
+                    android:inputType="text"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="13dp"
+                    android:background="@drawable/fondo_input"
+                    android:textColor="@color/negro"
+                    android:layout_marginBottom="18dp"
+                    android:textColorHint="@color/gris"
+                    android:singleLine="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contraseña"
+                    android:textSize="14sp"
+                    android:textColor="@color/negro"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+                <EditText
+                    android:id="@+id/Contrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Contraseña"
+                    android:textSize="15sp"
+                    android:inputType="textPassword"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="13dp"
+                    android:background="@drawable/fondo_input"
+                    android:textColor="@color/negro"
+                    android:layout_marginBottom="14dp"
+                    android:textColorHint="@color/gris"
+                    android:singleLine="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="13sp"
+                    android:textColor="@color/login_error"
+                    android:id="@+id/mensajeError"
+                    android:layout_marginBottom="10dp" />
+                <Button
+                    android:id="@+id/boton_inicio_sesion"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Ingresar"
+                    android:textSize="16sp"
+                    android:textColor="@color/blanco"
+                    android:textStyle="bold"
+                    android:background="@drawable/fondo_boton_negro"
+                    android:textAllCaps="false" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEEEEE"
+                    android:layout_marginTop="24dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Academia Lobos · Acceso al sistema"
+                    android:textSize="12sp"
+                    android:textColor="@color/gris"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

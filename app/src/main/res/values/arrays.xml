@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== Filtros de las listas ===== -->
+    <string-array name="f_cal_vista">
+        <item>Mes</item>
+        <item>Próximos</item>
+        <item>Todos</item>
+    </string-array>
+    <string-array name="f_cal_bitacora">
+        <item>Ocultar</item>
+        <item>Mostrar</item>
+    </string-array>
+    <string-array name="f_cal_entreno">
+        <item>No</item>
+        <item>Sí</item>
+    </string-array>
+    <!-- El orden debe coincidir con Util.ROLES -->
+    <string-array name="f_rol">
+        <item>Administrador</item>
+        <item>Profesor</item>
+        <item>Padre/Madre/Tutor</item>
+        <item>Alumno</item>
+    </string-array>
+    <!-- El orden debe coincidir con Util.PARENTESCOS -->
+    <string-array name="f_parentesco">
+        <item>Tutor</item>
+        <item>Padre</item>
+        <item>Madre</item>
+    </string-array>
+    <string-array name="f_edad_alumnos">
+        <item>Todos</item>
+        <item>6 - 10</item>
+        <item>11 - 15</item>
+        <item>16 - 18</item>
+    </string-array>
+    <string-array name="f_orden">
+        <item>Alfabético</item>
+        <item>Más recientes</item>
+    </string-array>
+    <string-array name="f_adeudos">
+        <item>Todos</item>
+        <item>Con adeudo</item>
+        <item>Sin adeudo</item>
+    </string-array>
+    <string-array name="f_edad_prof">
+        <item>Todos</item>
+        <item>18 - 30</item>
+        <item>31 - 45</item>
+        <item>46+</item>
+    </string-array>
+    <string-array name="f_edad_pers">
+        <item>Todos</item>
+        <item>18 - 25</item>
+        <item>26 - 35</item>
+        <item>36 - 45</item>
+        <item>46+</item>
+    </string-array>
+    <string-array name="f_rol_pers">
+        <item>Todos</item>
+        <item>Director</item>
+        <item>Administrativo</item>
+        <item>Coordinador</item>
+        <item>Recepción</item>
+    </string-array>
+    <string-array name="f_orden_doc">
+        <item>Más recientes</item>
+        <item>Más antiguos</item>
+    </string-array>
+    <string-array name="f_documento">
+        <item>Todos</item>
+        <item>CURP</item>
+        <item>Acta de nacimiento</item>
+        <item>Credencial</item>
+        <item>Certificado médico</item>
+        <item>Comprobante de domicilio</item>
+        <item>Otro</item>
+    </string-array>
+    <string-array name="f_tema">
+        <item>Todos</item>
+        <item>Pagos</item>
+        <item>Alumno Nuevo</item>
+        <item>Documentos</item>
+        <item>Uniformes</item>
+        <item>Equipos</item>
+        <item>Cuentas</item>
+        <item>General</item>
+    </string-array>
+
+    <!-- ===== Opciones de los formularios ===== -->
+    <string-array name="a_sangre">
+        <item>Sin registrar</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+    <string-array name="a_concepto">
+        <item>Mensualidad</item>
+        <item>Inscripción</item>
+        <item>Torneo</item>
+        <item>Arbitraje</item>
+        <item>Uniforme</item>
+    </string-array>
+    <string-array name="a_estado_pago">
+        <item>Pagado</item>
+        <item>Pendiente</item>
+        <item>Adeudo</item>
+    </string-array>
+    <string-array name="a_area">
+        <item>Técnico</item>
+        <item>Táctico</item>
+        <item>Físico</item>
+        <item>Mental</item>
+        <item>General</item>
+    </string-array>
+    <string-array name="a_tipo_evento">
+        <item>Entreno</item>
+        <item>Partido</item>
+        <item>Junta</item>
+        <item>Torneo</item>
+        <item>Otro</item>
+    </string-array>
+    <string-array name="a_tema">
+        <item>Pagos</item>
+        <item>Alumno Nuevo</item>
+        <item>Documentos</item>
+        <item>Uniformes</item>
+        <item>Equipos</item>
+        <item>Cuentas</item>
+        <item>General</item>
+    </string-array>
+    <string-array name="a_tipo_doc">
+        <item>CURP</item>
+        <item>Acta de nacimiento</item>
+        <item>Credencial</item>
+        <item>Certificado médico</item>
+        <item>Comprobante de domicilio</item>
+        <item>Otro</item>
+    </string-array>
+    <string-array name="a_tipo_uniforme">
+        <item>Local</item>
+        <item>Visita</item>
+        <item>Entrenamiento</item>
+    </string-array>
+    <string-array name="a_talla">
+        <item>XS</item>
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+    </string-array>
+    <string-array name="a_estado_pedido">
+        <item>Pendiente</item>
+        <item>En producción</item>
+        <item>Entregado</item>
+    </string-array>
+    <string-array name="a_puesto_admin">
+        <item>Director</item>
+        <item>Administrativo</item>
+        <item>Coordinador</item>
+        <item>Recepción</item>
+    </string-array>
+    <string-array name="a_puesto_prof">
+        <item>Profesor</item>
+        <item>Entrenador</item>
+        <item>Preparador físico</item>
+        <item>Entrenador de porteros</item>
+    </string-array>
+</resources>

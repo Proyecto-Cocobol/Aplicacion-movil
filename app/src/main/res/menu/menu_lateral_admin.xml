@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_lateral_inicio"
+            android:icon="@drawable/inicio_activo"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/menu_lateral_alumnos"
+            android:icon="@drawable/alumnos_menu_lateral"
+            android:title="Alumnos" />
+        <item
+            android:id="@+id/menu_lateral_personal"
+            android:icon="@drawable/personal_menu_lateral"
+            android:title="Personal" />
+        <item
+            android:id="@+id/menu_lateral_finanzas"
+            android:icon="@drawable/finanzas_menu_lateral"
+            android:title="Finanzas" />
+        <item
+            android:id="@+id/menu_lateral_equipos"
+            android:icon="@drawable/equipo_menu_lateral"
+            android:title="Equipos" />
+        <item
+            android:id="@+id/menu_lateral_calendario"
+            android:icon="@drawable/calendario_menu_lateral"
+            android:title="Calendario" />
+        <item
+            android:id="@+id/menu_lateral_documentos"
+            android:icon="@drawable/documentos_menu_lateral"
+            android:title="Documentos" />
+        <item
+            android:id="@+id/menu_lateral_uniformes"
+            android:icon="@drawable/uniforme_menu_lateral"
+            android:title="Uniformes" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_lateral_cuentas"
+            android:icon="@drawable/ic_cuenta"
+            android:title="Administrar cuentas" />
+        <item
+            android:id="@+id/menu_lateral_contrasena"
+            android:icon="@drawable/ic_candado"
+            android:title="Cambiar contraseña" />
+        <item
+            android:id="@+id/menu_lateral_cerrar"
+            android:icon="@drawable/ic_salir"
+            android:title="Cerrar sesión" />
+    </group>
+</menu>

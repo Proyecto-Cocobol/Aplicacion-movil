@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finanzas"
+            android:textSize="26sp"
+            android:textColor="@color/negro"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consulta y administración financiera de alumnos."
+            android:textSize="13sp"
+            android:textColor="@color/gris"
+            android:layout_marginTop="4dp" />
+        <View
+            android:layout_width="50dp"
+            android:layout_height="4dp"
+            android:background="@color/magenta"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="14dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adeudos"
+                    android:textSize="11sp"
+                    android:textColor="@color/gris"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp" />
+                <Spinner
+                    android:id="@+id/fil_adeudos"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:entries="@array/f_adeudos"
+                    android:background="@drawable/fondo_input" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categoría"
+                    android:textSize="11sp"
+                    android:textColor="@color/gris"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp" />
+                <Spinner
+                    android:id="@+id/fil_categoria"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/fondo_input" />
+            </LinearLayout>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/buscar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:hint="Buscar alumno..."
+            android:textSize="14sp"
+            android:inputType="text"
+            android:background="@drawable/fondo_input"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/negro"
+            android:textColorHint="@color/gris"
+            android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/fondo_card"
+        android:padding="16dp"
+        android:layout_marginBottom="6dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Resumen"
+                android:textSize="16sp"
+                android:textColor="@color/negro"
+                android:textStyle="bold"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total cobrado"
+                    android:textSize="12sp"
+                    android:textColor="@color/gris"
+                    android:layout_weight="1" />
+                <TextView
+                    android:id="@+id/txt_total_cobrado"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="@color/negro"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:gravity="end" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/linea" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total por cobrar"
+                    android:textSize="12sp"
+                    android:textColor="@color/gris"
+                    android:layout_weight="1" />
+                <TextView
+                    android:id="@+id/txt_total_adeudo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="@color/negro"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:gravity="end" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/linea" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

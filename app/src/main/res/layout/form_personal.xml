@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout">
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gris_fondo">
+        <include
+            layout="@layout/barra_superior" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+                    <TextView
+                        android:id="@+id/form_titulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nuevo profesor"
+                        android:textSize="26sp"
+                        android:textColor="@color/negro"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/form_subtitulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Registra los datos del personal."
+                        android:textSize="13sp"
+                        android:textColor="@color/gris"
+                        android:layout_marginTop="4dp" />
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="4dp"
+                        android:background="@color/magenta"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/fondo_card"
+                    android:padding="16dp"
+                    android:layout_marginBottom="14dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Datos personales"
+                            android:textSize="16sp"
+                            android:textColor="@color/negro"
+                            android:textStyle="bold"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nombre(s) *"
+                            android:textSize="13sp"
+                            android:textColor="@color/negro"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="6dp" />
+                        <EditText
+                            android:id="@+id/f_nombre"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:hint=""
+                            android:textSize="14sp"
+                            android:inputType="textPersonName|textCapWords"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:background="@drawable/fondo_input"
+                            android:textColor="@color/negro"
+                            android:textColorHint="@color/gris"
+                            android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Apellido paterno *"
+                            android:textSize="13sp"
+                            android:textColor="@color/negro"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="6dp" />
+                        <EditText
+                            android:id="@+id/f_paterno"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:hint=""
+                            android:textSize="14sp"
+                            android:inputType="textPersonName|textCapWords"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:background="@drawable/fondo_input"
+                            android:textColor="@color/negro"
+                            android:textColorHint="@color/gris"
+                            android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Apellido materno"
+                            android:textSize="13sp"
+                            android:textColor="@color/negro"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="6dp" />
+                        <EditText
+                            android:id="@+id/f_materno"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:hint=""
+                            android:textSize="14sp"
+                            android:inputType="textPersonName|textCapWords"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:background="@drawable/fondo_input"
+                            android:textColor="@color/negro"
+                            android:textColorHint="@color/gris"
+                            android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fecha de nacimiento *"
+                            android:textSize="13sp"
+                            android:textColor="@color/negro"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="6dp" />
+                        <EditText
+                            android:id="@+id/f_fecha_nac"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:hint="dd/mm/aaaa"
+                            android:textSize="14sp"
+                            android:inputType="none"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:background="@drawable/fondo_input"
+                            android:textColor="@color/negro"
+                            android:textColorHint="@color/gris"
+                            android:singleLine="true"
+                            android:focusable="false"
+                            android:clickable="true" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Teléfono"
+                            android:textSize="13sp"
+                            android:textColor="@color/negro"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="6dp" />
+                        <EditText
+                            android:id="@+id/f_telefono"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:hint="10 dígitos"
+                            android:textSize="14sp"
+                            android:inputType="phone"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:background="@drawable/fondo_input"
+                            android:textColor="@color/negro"
+                            android:textColorHint="@color/gris"
+                            android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Correo electrónico"
+                            android:textSize="13sp"
+                            android:textColor="@color/negro"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="6dp" />
+                        <EditText
+                            android:id="@+id/f_correo"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:hint=""
+                            android:textSize="14sp"
+                            android:inputType="textEmailAddress"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:background="@drawable/fondo_input"
+                            android:textColor="@color/negro"
+                            android:textColorHint="@color/gris"
+                            android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/fondo_card"
+                    android:padding="16dp"
+                    android:layout_marginBottom="14dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Puesto"
+                            android:textSize="16sp"
+                            android:textColor="@color/negro"
+                            android:textStyle="bold"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rol / puesto *"
+                            android:textSize="13sp"
+                            android:textColor="@color/negro"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="6dp" />
+                        <Spinner
+                            android:id="@+id/f_puesto"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:background="@drawable/fondo_input" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/cont_equipo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Categoría a cargo"
+                            android:textSize="13sp"
+                            android:textColor="@color/negro"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="6dp" />
+                        <Spinner
+                            android:id="@+id/f_equipo"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:background="@drawable/fondo_input" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/form_mensaje"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="13sp"
+                        android:textColor="@color/login_error"
+                        android:layout_marginBottom="10dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/form_cancelar"
+                            android:text="Cancelar"
+                            android:textSize="13sp"
+                            android:textColor="@color/magenta"
+                            android:textStyle="bold"
+                            android:background="@drawable/fondo_boton_borde"
+                            android:textAllCaps="false"
+                            android:minHeight="0dp"
+                            android:paddingEnd="16dp"
+                            android:paddingStart="16dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:minWidth="0dp" />
+                        <Button
+                            android:id="@+id/form_guardar"
+                            android:text="Guardar"
+                            android:textSize="13sp"
+                            android:textColor="@color/blanco"
+                            android:textStyle="bold"
+                            android:background="@drawable/fondo_boton_magenta"
+                            android:textAllCaps="false"
+                            android:minHeight="0dp"
+                            android:paddingEnd="16dp"
+                            android:paddingStart="16dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:minWidth="0dp"
+                            android:layout_marginStart="10dp" />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/form_eliminar"
+                        android:text="Eliminar"
+                        android:textSize="13sp"
+                        android:textColor="@color/estado_peligro_texto"
+                        android:textStyle="bold"
+                        android:background="@drawable/fondo_estado_peligro"
+                        android:textAllCaps="false"
+                        android:minHeight="0dp"
+                        android:paddingEnd="16dp"
+                        android:paddingStart="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:minWidth="0dp"
+                        android:layout_marginTop="12dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <include
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        layout="@layout/menu_lateral" />
+</androidx.drawerlayout.widget.DrawerLayout>

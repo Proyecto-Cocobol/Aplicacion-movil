@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bitácora"
+            android:textSize="26sp"
+            android:textColor="@color/negro"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro de actividad administrativa."
+            android:textSize="13sp"
+            android:textColor="@color/gris"
+            android:layout_marginTop="4dp" />
+        <View
+            android:layout_width="50dp"
+            android:layout_height="4dp"
+            android:background="@color/magenta"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tema"
+                    android:textSize="11sp"
+                    android:textColor="@color/gris"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp" />
+                <Spinner
+                    android:id="@+id/fil_tema"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:entries="@array/f_tema"
+                    android:background="@drawable/fondo_input" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Orden"
+                    android:textSize="11sp"
+                    android:textColor="@color/gris"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp" />
+                <Spinner
+                    android:id="@+id/fil_orden"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:entries="@array/f_orden_doc"
+                    android:background="@drawable/fondo_input" />
+            </LinearLayout>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/buscar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:hint="Búsqueda..."
+            android:textSize="14sp"
+            android:inputType="text"
+            android:background="@drawable/fondo_input"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/negro"
+            android:textColorHint="@color/gris"
+            android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:layout_marginBottom="6dp">
+        <Button
+            android:id="@+id/boton_agregar"
+            android:text="+ Nota"
+            android:textSize="13sp"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:background="@drawable/fondo_boton_magenta"
+            android:textAllCaps="false"
+            android:minHeight="0dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:minWidth="0dp" />
+    </LinearLayout>
+</LinearLayout>
